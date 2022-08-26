@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Grid - Modal</title>
+  </head>
+  <body>
+
+    <div class="header">
+        <h1>Image Grid Modal</h1>
+        <p>Click the image in order to see the modal. Click exit button or escape from keyboard or click to the overlay in order to close the image. Try to resize the screen in order to check the responsive design!</p>
+        <p>Images: <a href="https://www.freeimages.com/" target="_blank">Free images</a></p>
+        <p>The template (HTML & CSS): <a href="https://www.w3schools.com/" target="_blank">W3 schools</a></p>
+    </div>
+
+    <!--DIV with images-->
+    <div class="row">
+      <div class="column">
+        <img
+          class ="show-modal image" src="https://images.freeimages.com/images/large-previews/d0f/nuclear-power-plant-1314782.jpg"
+          style="width: 100%"
+        />
+        <img
+          class="show-modal image" src="https://images.freeimages.com/images/large-previews/e04/yellow-frontal-with-ivy-1228121.jpg"
+          style="width: 100%"
+        />
+        <img
+          class="show-modal image" src="https://images.freeimages.com/images/large-previews/566/green-frog-1361810.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/9bd/buddha-4-1142506.jpg" style="width:100%">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/69b/wump-world-1535812.jpg" style="width:100%">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/70b/bike-red-1423575.jpg" style="width:100%">
+    </div>
+
+    <div class="column">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/4ba/healthy-food-1327899.jpg" style="width:100%">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/e04/yellow-frontal-with-ivy-1228121.jpg" style="width:100%">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/566/green-frog-1361810.jpg" style="width:100%">
+    </div>
+
+    <div class="column">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/9bd/buddha-4-1142506.jpg" style="width:100%">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/69b/wump-world-1535812.jpg" style="width:100%">
+        <img class ="show-modal image" src="https://images.freeimages.com/images/large-previews/5e0/daisys-1392171.jpg" style="width:100%">
+    </div>
+    <!---->
+
+    <!--The modal DIV-->
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <img
+          id="modal-image" src=""
+          style="width: 100%"
+        />
+    </div>
+    <div class="overlay hidden"></div>
+    <!---->
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
